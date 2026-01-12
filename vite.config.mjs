@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => {
       host: true
     },
     define: {
-      global: 'window'
+      // global: 'window' // Removed to prevent library crashes
     },
     resolve: {
       alias: [
