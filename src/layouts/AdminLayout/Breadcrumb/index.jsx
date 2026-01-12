@@ -35,7 +35,7 @@ export default function Breadcrumb() {
         if (collapse.type === 'collapse') {
           getCollapse(collapse);
         } else if (collapse.type && collapse.type === 'item') {
-          if (document.location.pathname === import.meta.env.VITE_APP_BASE_NAME + collapse.url) {
+          if (document.location.pathname === (import.meta.env.VITE_APP_BASE_NAME || '') + collapse.url) {
             setMain(items);
             setItem(collapse);
           }
